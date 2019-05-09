@@ -1,4 +1,4 @@
-NOTE: All packages are built from master branches.
+**NOTE:** All packages are built from master branches.
 
 This GitHub repository is for convenience only.
 
