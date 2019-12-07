@@ -6,7 +6,34 @@ Thank you for checking out these Debian packages (info [here](https://www.debian
 
 You'll find packages here typically (but not exclusively) from [Extra](https://github.com/terminalforlife/Extra) and [PerlProjects](https://github.com/terminalforlife/PerlProjects) repositories.
 
-The packages here can be downloaded and installed with a one-liner in a terminal, or by using your browser then a utility like `gdebi` (info [here](https://simple.wikipedia.org/wiki/Gdebi)) which has a GUI.
+The packages here can be downloaded and installed with a one-liner in a terminal, or by using your browser then a utility like `gdebi` (info [here](https://simple.wikipedia.org/wiki/Gdebi)) which has a GUI. See below for the aforementioned one-liner.
+
+### Install via the terminal
+
+Here is a basic example of how to install the `apt-undo-install` Debian package from a terminal, by using the below one-liner. Ensure there is no file in the current directory with the same name present, otherwise it would be overwritten.
+
+```bash
+if wget -q https://github.com/terminalforlife/DEB-Packages/blob/master/apt-undo-install_2019-05-09_all.deb; then sudo dpkg -i apt-undo-install_2019-05-09_all.deb && rm apt-undo-install_2019-05-09_all.deb; fi
+```
+
+If you don't have Wget, try Curl, by replacing `wget -q` with `curl -s`. The `-q` or `-s` options just tells these programs to hush, as they produce a lot of output.
+
+Before installing any of these packages, you're welcome to check their hashes ([128-bit MD5 hashes](https://en.wikipedia.org/wiki/Md5sum)), in an effort to avoid executing files with which have been tampered. The hashes will (hopefully always) be stored in [this](md5sum) file.
+
+To check a hash for any number of the packages retrieved from here, run the below one-liner on a terminal, whilst in the same directory into which you downloaded your chosen package(s).
+
+```bash
+wget -qO - https://raw.githubusercontent.com/terminalforlife/DEB-Packages/master/md5sum | md5sum -c --ignore-missing
+```
+
+Example of a successful check:
+
+```
+lsbins_2019-05-09_all.deb: OK
+purgerc_2019-05-09_all.deb: OK
+ubuntu-syschk_2019-10-27_all.deb: OK
+wcdl_2019-05-11_all.deb: OK
+```
 
 # Disclaimer
 
