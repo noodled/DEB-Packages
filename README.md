@@ -16,7 +16,7 @@ Here is a basic example of how to install the `apt-undo-install` Debian package 
 if wget -q https://raw.githubusercontent.com/terminalforlife/DEB-Packages/master/apt-undo-install_2019-05-09_all.deb; then sudo dpkg -i apt-undo-install_2019-05-09_all.deb && rm apt-undo-install_2019-05-09_all.deb; fi
 ```
 
-If you don't have Wget, try Curl, by replacing `wget -q` with `curl -s`. The `-q` or `-s` options just tells these programs to hush, as they produce a lot of output.
+If you don't have Wget, try Curl, by replacing `wget -q` with `curl -s`. The `-q` or `-s` option just tells these programs to hush, as they produce a lot of output.
 
 Before installing any of these packages, you're welcome to check their hashes ([128-bit MD5 hashes](https://en.wikipedia.org/wiki/Md5sum)), in an effort to avoid executing files with which have been tampered. The hashes will (hopefully always) be stored in [this](md5sum) file.
 
