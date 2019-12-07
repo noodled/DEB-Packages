@@ -8,7 +8,7 @@ You'll find packages here typically (but not exclusively) from [Extra](https://g
 
 The packages here can be downloaded and installed with a one-liner in a terminal, or by using your browser then a utility like `gdebi` (info [here](https://simple.wikipedia.org/wiki/Gdebi)) which has a GUI. See below for the aforementioned one-liner.
 
-### Install via the terminal
+##### Install via Terminal
 
 Here is a basic example of how to install the `apt-undo-install` Debian package from a terminal, by using the below one-liner. Ensure there is no file in the current directory with the same name present, otherwise it would be overwritten.
 
