@@ -13,7 +13,7 @@ The packages here can be downloaded and installed with a one-liner in a terminal
 Here is a basic example of how to install the `apt-undo-install` Debian package from a terminal, by using the below one-liner. Ensure there is no file in the current directory with the same name present, otherwise it would be overwritten.
 
 ```bash
-if wget -q https://raw.githubusercontent.com/terminalforlife/DEB-Packages/master/apt-undo-install_2019-05-09_all.deb; then sudo dpkg -i apt-undo-install_2019-05-09_all.deb && rm apt-undo-install_2019-05-09_all.deb; fi
+if wget -q https://raw.githubusercontent.com/terminalforlife/DEB-Packages/master/apt-undo-install/apt-undo-install_2019-05-09_all.deb; then sudo dpkg -i apt-undo-install_2019-05-09_all.deb && rm apt-undo-install_2019-05-09_all.deb; fi
 ```
 
 If you don't have Wget, try Curl, by replacing `wget -q` with `curl -s`. The `-q` or `-s` option just tells these programs to hush, as they produce a lot of output.
