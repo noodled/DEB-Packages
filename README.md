@@ -1,3 +1,5 @@
+&#x1F534; **This repository is _archived_ and no longer active.**
+
 **NOTE:** _All packages are built from master branches._
 
 # Information
